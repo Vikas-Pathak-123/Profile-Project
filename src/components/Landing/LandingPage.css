@@ -89,6 +89,14 @@
   background: #f1f1f1;
 }
 
+.user-card-lable::-webkit-scrollbar {
+  width: 0.2em;
+}
+
+.user-card-lable::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
 /* Add a custom scrollbar */
 .user-card-list::-webkit-scrollbar-thumb {
   background-color: var(--primary-color);
