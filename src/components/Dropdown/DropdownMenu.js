@@ -35,7 +35,9 @@ function DropdownMenu() {
         <img src={user.profilepicture} alt="Profile" />
         <p>{user.name}</p>
         {showDropdown ? (
-          <div style={{ paddingLeft: "1rem" }}>
+          <div
+            style={{ paddingLeft: "1rem", display: "flex", flexWrap: "wrap" }}
+          >
             <span>@{user.username}</span>&nbsp;&nbsp;
             <span className="signOut__btn" onClick={handleSignOut}>
               Sign Out
