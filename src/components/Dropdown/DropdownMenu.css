@@ -1,0 +1,100 @@
+/* dropdown css */
+.user-profile {
+  position: relative;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.other-users {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.other-users h2 {
+  margin-bottom: 10px;
+}
+
+.other-users div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.other-users img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+button {
+  background-color: #9df1df;
+  color: gray;
+}
+
+button:hover {
+  background: #ffea20;
+  border-radius: 5px;
+  color: gray;
+}
+
+.user-info:hover + .other-users,
+.other-users:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.signOut__btn {
+  background-color: #8dcbe6;
+  padding: 8px;
+  border-radius: 5px;
+  color: white;
+}
+.signOut__btn:hover {
+  background-color: #9df1df;
+  color: gray;
+}
+
+.other-users {
+  max-height: 30rem;
+  overflow-y: scroll;
+}
+/* Hide the default scrollbar */
+.other-users::-webkit-scrollbar {
+  width: 0.2em;
+}
+
+.other-users::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Add a custom scrollbar */
+.other-users::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 20px;
+}
+
+/* On hover, add a darker background color */
+.other-users::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent-color);
+}
